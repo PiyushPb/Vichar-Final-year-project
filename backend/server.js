@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(express.json());
 
 try {
-  await mongoose.connect(process.env.MONGODB_URL, { dbName: "users" });
+  await mongoose.connect(process.env.MONGODB_URL, { dbName: "usersDb" });
   console.log("MongoDB connected");
 } catch (error) {
   console.error("MongoDB connection error:", error);
